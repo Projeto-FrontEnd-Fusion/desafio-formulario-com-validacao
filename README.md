@@ -1,7 +1,7 @@
 
 # Terceiro Desafio: Formulário de Cadastro de Membros - Processo Seletivo Frontend Fusion - [vaga voluntária]
 
-> OBS : Você receberá um e-mail com a data de início dos desafios, mas eles já estão disponíveis para acesso imediato. 
+> OBS : Você receberá um e-mail com a data de início dos desafios, mas eles já estão disponíveis para acesso imediato.
 Se ainda não preencheu o formulário, por favor, acesse o link para completá-lo.
 [Forms de inscrição](https://forms.gle/EJKDNKdmVZM3zQTr7)
 é importante está inscrito no formulário , pois o seu email precisa ser validado
@@ -96,18 +96,18 @@ Olá,
 
 Segue abaixo a entrega do Desafio 03 para o processo seletivo do Frontend Fusion.
 
-**Nome:** João Silva  
-**Link do GitHub:** [https://github.com/joaosilva](https://github.com/joaosilva)  
-**Link do LinkedIn:** [https://linkedin.com/in/joaosilva](https://linkedin.com/in/joaosilva)  
-**Data de Início:** 01/09/2024  
-**Data de Entrega:** 20/09/2024  
-**Link do GitHub com o Código:** [https://github.com/joaosilva/desafio03](https://github.com/joaosilva/desafio03)  
-**Link do Deploy:** [https://joaosilva.netlify.app](https://joaosilva.netlify.app)  
+**Nome:** João Silva
+**Link do GitHub:** [https://github.com/joaosilva](https://github.com/joaosilva)
+**Link do LinkedIn:** [https://linkedin.com/in/joaosilva](https://linkedin.com/in/joaosilva)
+**Data de Início:** 01/09/2024
+**Data de Entrega:** 20/09/2024
+**Link do GitHub com o Código:** [https://github.com/joaosilva/desafio03](https://github.com/joaosilva/desafio03)
+**Link do Deploy:** [https://joaosilva.netlify.app](https://joaosilva.netlify.app)
 **Link da Postagem no LinkedIn:** [https://linkedin.com/posts/joaosilva/desafio-03](https://linkedin.com/posts/joaosilva/desafio-03)
 
 Agradeço a oportunidade e estou à disposição para qualquer dúvida.
 
-Atenciosamente,  
+Atenciosamente,
 João Silva
 
 ---
