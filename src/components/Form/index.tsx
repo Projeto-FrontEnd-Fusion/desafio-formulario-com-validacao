@@ -6,7 +6,7 @@ import JobSelect from '../JobSelect';
 import { ErrorMessage } from '../ErrorMessage';
 
 export function Form() {
-  const { register, errors, onSubmit, setValue, validationRules } = useFormHandler();
+  const { register, errors, onSubmit, setValue } = useFormHandler();
 
   return (
     <form onSubmit={onSubmit} className='bg-white shadow-md rounded-lg p-8 max-w-lg w-full'>
@@ -18,7 +18,7 @@ export function Form() {
           label='Nome completo'
           type="text"
           placeholder='Nome completo'
-          {...register('name', validationRules.name)}
+          {...register('name')}
         />
         <ErrorMessage error={errors.name?.message} />
       </div>
@@ -31,7 +31,7 @@ export function Form() {
           label='E-mail'
           type="email"
           placeholder='E-mail'
-          {...register('email', validationRules.email)}
+          {...register('email')}
         />
         <ErrorMessage error={errors.email?.message} />
       </div>
@@ -42,7 +42,7 @@ export function Form() {
           label='Telefone'
           placeholder='(XX) XXXXX-XXXX'
           type='tel'
-          {...register('phone', validationRules.phone)}
+          {...register('phone')}
         />
         <ErrorMessage error={errors.phone?.message} />
       </div>
@@ -71,7 +71,7 @@ export function Form() {
         <JobSelect
           id='job'
           jobs={JOBS}
-          {...register('job', validationRules.job)}
+          {...register('job')}
           onChange={(e) => setValue('job', e.target.value)}
         />
         <ErrorMessage error={errors.job?.message} />
