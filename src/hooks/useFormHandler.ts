@@ -1,11 +1,12 @@
 import { useForm } from 'react-hook-form';
-import { IFormData } from '../types/IFormData';
-import { validationRules } from '../utils/validationRules';
+import { zodResolver } from '@hookform/resolvers/zod';
+import { formSchema } from '../utils/validationSchema';
 import { getFromLocalStorage, saveToLocalStorage } from '../utils/localStorage';
 import { isEmailRegistered } from '../utils/isEmailRegistered';
+import { IFormData } from '../types/IFormData';
 
 export function useFormHandler() {
-  const { handleSubmit, register, formState: { errors }, reset, setValue, setError } = useForm<IFormData>();
+  const { handleSubmit, register, formState: { errors }, reset, setValue, setError } = useForm<IFormData>({ resolver: zodResolver(formSchema) });
 
   const onSubmit = handleSubmit((data) => {
     if (isEmailRegistered(data.email)) {
@@ -27,6 +28,5 @@ export function useFormHandler() {
     errors,
     onSubmit,
     setValue,
-    validationRules,
   };
 }
