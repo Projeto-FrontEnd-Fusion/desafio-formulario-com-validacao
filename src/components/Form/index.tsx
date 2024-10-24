@@ -6,11 +6,19 @@ import JobSelect from '../JobSelect';
 import { ErrorMessage } from '../ErrorMessage';
 
 export function Form() {
-  const { register, errors, onSubmit, setValue } = useFormHandler();
+  const { register, errors, onSubmit, setValue, clearErrors, successMessage } = useFormHandler();
 
   return (
     <form onSubmit={onSubmit} className='bg-white shadow-md rounded-lg p-8 max-w-lg w-full'>
       <h1 className='text-2xl font-bold mb-6 text-center text-gray-800'>Front-End Fusion</h1>
+
+      {
+        successMessage && (
+          <div className='bg-green-100 text-green-700 p-4 mb-4 rounded'>
+            {successMessage}
+          </div>
+        )
+      }
 
       <div className="mb-4">
         <Input
@@ -72,7 +80,10 @@ export function Form() {
           id='job'
           jobs={JOBS}
           {...register('job')}
-          onChange={(e) => setValue('job', e.target.value)}
+          onChange={(e) => {
+            setValue('job', e.target.value);
+            clearErrors('job');
+          }}
         />
         <ErrorMessage error={errors.job?.message} />
       </div>
