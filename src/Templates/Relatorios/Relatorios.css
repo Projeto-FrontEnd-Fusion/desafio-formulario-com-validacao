@@ -4,7 +4,7 @@
 /* relatorios_container */
 .relatorios_container{
     width: 78vw;
-    height: 90vh;
+    height: 98vh;
     position: absolute;
     right: 0;
     margin-right: 1vw;
@@ -17,6 +17,42 @@
     background-color: white;
 }
 /* ================= MEDIA SCREEN ================= */
+@media screen and (min-width: 769px) and (max-width: 1023px) and (orientation: portrait){
+    /* relatorios_container */
+.relatorios_container{
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(0, 0, 0, 0.205);
+  border-radius: 10px;
+  box-shadow: 15px 1px 1rem rgba(0, 0, 0, 0.185);
+  background-color: white;
+  
+}
+}
+@media screen and (min-width: 481px) and (max-width: 768px) and (orientation: portrait){
+  /* relatorios_container */
+.relatorios_container{
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(0, 0, 0, 0.205);
+  border-radius: 10px;
+  box-shadow: 15px 1px 1rem rgba(0, 0, 0, 0.185);
+  background-color: white;
+  
+}
+}
 @media (max-width: 480px) {
     
 
@@ -38,3 +74,27 @@
     
 }
 }
+@media (max-width: 320px) {
+    
+
+
+    /* relatorios_container */
+    .relatorios_container{
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid rgba(0, 0, 0, 0.205);
+        border-radius: 10px;
+        box-shadow: 15px 1px 1rem rgba(0, 0, 0, 0.185);
+        background-color: white;
+      h1{
+        font-size: 22px;
+      }
+        
+    }
+    }

@@ -3,11 +3,10 @@ import { Form, Input, Select, Button, Upload } from "antd";
 import { useDispatch } from "react-redux";
 import { addMember } from "../../Redux/Slices/memberSlice";
 import { UploadOutlined } from "@ant-design/icons";
-import * as Yup from "yup"; 
+import * as Yup from "yup";
 import { notification } from "antd";
 // IMPORT CSS
 import "./Form.css";
-
 
 const { Option } = Select;
 
@@ -19,7 +18,7 @@ const validationSchema = Yup.object({
     .required("Por favor, insira seu e-mail!"),
   telefone: Yup.string()
     .matches(
-      /^[0-9]{2}[9]{1}[0-9]{8}$/, 
+      /^[0-9]{2}[9]{1}[0-9]{8}$/,
       "Por favor, insira um telefone válido (formato: XX9XXXXXXXX)"
     )
     .required("Por favor, insira seu telefone!"),
@@ -41,18 +40,20 @@ const MemberForm = () => {
     try {
       // Salva os dados no Redux e localStorage
       dispatch(addMember(values));
-  
-      const existingMembers = JSON.parse(localStorage.getItem("members") || "[]");
+
+      const existingMembers = JSON.parse(
+        localStorage.getItem("members") || "[]"
+      );
       existingMembers.push(values);
       localStorage.setItem("members", JSON.stringify(existingMembers));
-  
+
       // Exibe mensagem de sucesso
       notification.success({
         message: "Sucesso!",
         description: "Cadastro realizado com sucesso!",
         placement: "topRight", // Posição da notificação
       });
-  
+
       // Reseta o formulário
       form.resetFields();
     } catch (error) {
@@ -64,13 +65,10 @@ const MemberForm = () => {
       });
     }
   };
-  
 
   const handleFileChange = (info: any) => {
     console.log("File uploaded:", info.file);
   };
-
-  
 
   return (
     <>
@@ -78,7 +76,7 @@ const MemberForm = () => {
         <div className="container_perfil">
           <div className="img_perfil">
             <img src="/img/perfil-user.webp" alt="" />
-            <Upload
+            <Upload className="up"
               name="file"
               onChange={handleFileChange}
               showUploadList={false} // Para ocultar a lista de arquivos
@@ -106,7 +104,12 @@ const MemberForm = () => {
           <Form.Item
             label="Nome Completo"
             name="nome"
-            rules={[{ required: true, message: "Por favor, insira seu nome completo!" }]}
+            rules={[
+              {
+                required: true,
+                message: "Por favor, insira seu nome completo!",
+              },
+            ]}
           >
             <Input placeholder="Digite seu nome completo" />
           </Form.Item>
@@ -132,7 +135,8 @@ const MemberForm = () => {
               { required: true, message: "Por favor, insira seu telefone!" },
               {
                 pattern: /^[0-9]{2}[9]{1}[0-9]{8}$/,
-                message: "Por favor, insira um telefone válido (formato: XX9XXXXXXXX)",
+                message:
+                  "Por favor, insira um telefone válido (formato: XX9XXXXXXXX)",
               },
             ]}
           >
@@ -142,7 +146,9 @@ const MemberForm = () => {
           <Form.Item
             label="Cargo Pretendido"
             name="cargo"
-            rules={[{ required: true, message: "Por favor, selecione um cargo!" }]}
+            rules={[
+              { required: true, message: "Por favor, selecione um cargo!" },
+            ]}
           >
             <Select placeholder="Selecione um cargo">
               <Option value="frontend">Desenvolvedor Frontend</Option>
@@ -180,7 +186,6 @@ const MemberForm = () => {
           </Form.Item>
         </Form>
       </section>
-   
     </>
   );
 };

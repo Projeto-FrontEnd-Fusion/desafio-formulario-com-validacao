@@ -45,7 +45,7 @@ const ChartComponent: React.FC = () => {
   return (
     <div className="grafico_container">
       <h3>Gráfico de Usuários Cadastrados</h3>
-      <Bar
+      <Bar className="gf_bk"
         data={chartData}
         options={{
           responsive: true,
