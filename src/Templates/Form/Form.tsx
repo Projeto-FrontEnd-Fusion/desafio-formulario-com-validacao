@@ -38,26 +38,42 @@ const MemberForm = () => {
   // Função para enviar o formulário
   const handleSubmit = (values) => {
     try {
-      // Salva os dados no Redux e localStorage
-      dispatch(addMember(values));
-
-      const existingMembers = JSON.parse(
-        localStorage.getItem("members") || "[]"
+      // Recupera os membros já cadastrados
+      const existingMembers = JSON.parse(localStorage.getItem("members") || "[]");
+  
+      // Verifica se já existe um membro com o mesmo e-mail ou telefone
+      const duplicateMember = existingMembers.find(
+        (member) => member.email === values.email || member.telefone === values.telefone
       );
+  
+      if (duplicateMember) {
+        // Exibe mensagem de erro caso o membro já exista
+        notification.error({
+          message: "Erro!",
+          description: "Já existe um membro cadastrado com este e-mail ou telefone.",
+          placement: "topRight",
+        });
+        return;
+      }
+  
+      // Adiciona o novo membro
       existingMembers.push(values);
       localStorage.setItem("members", JSON.stringify(existingMembers));
-
+  
+      // Salva os dados no Redux
+      dispatch(addMember(values));
+  
       // Exibe mensagem de sucesso
       notification.success({
         message: "Sucesso!",
         description: "Cadastro realizado com sucesso!",
-        placement: "topRight", // Posição da notificação
+        placement: "topRight",
       });
-
+  
       // Reseta o formulário
       form.resetFields();
     } catch (error) {
-      // Exibe mensagem de erro
+      // Exibe mensagem de erro em caso de falha
       notification.error({
         message: "Erro!",
         description: "Falha ao cadastrar. Verifique os dados informados.",
