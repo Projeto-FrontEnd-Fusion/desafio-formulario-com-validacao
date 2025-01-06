@@ -92,6 +92,15 @@ body.dark-mode .title_perfil_form{
   color: white;
   background-color: #444444;
 }
+/* container_menbers */
+body.dark-mode .container_menbers{
+h1{
+  color: #333333;
+}
+p{
+  color: #333333;
+}
+}
 /* ================= MEDIA SCREEN ================= */
 @media screen and (min-width: 769px) and (max-width: 1023px) and (orientation: portrait){
   .container_switch {
