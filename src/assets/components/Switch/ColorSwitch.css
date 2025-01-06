@@ -101,6 +101,12 @@ p{
   color: #333333;
 }
 }
+/* services_container */
+body.dark-mode .services_container{
+  h1{
+    color: white;
+  }
+}
 /* ================= MEDIA SCREEN ================= */
 @media screen and (min-width: 769px) and (max-width: 1023px) and (orientation: portrait){
   .container_switch {
