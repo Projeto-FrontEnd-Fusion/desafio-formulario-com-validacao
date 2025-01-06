@@ -22,6 +22,9 @@ Este projeto é um formulário de cadastro desenvolvido com **React**, voltado p
 
 ---
 
+![Imagem do Projeto](https://drive.google.com/uc?export=view&id=15xwf9gz7UfwLabbcxpVQC5Gb4oQFZLxg)
+
+
 ## 🖊️ Campos do Formulário
 
 O formulário contém os seguintes campos:  
@@ -84,3 +87,18 @@ Siga as etapas abaixo para rodar o projeto localmente:
    ```bash
    git clone https://github.com/Projeto-FrontEnd-Fusion/desafio-formulario-com-validacao-frontend.git
    ```
+    
+ 2. **Acesse o diretório do projeto:**
+     ```bash 
+    cd desafio-formulario-com-validacao-frontend
+      ```
+ 3. **Instale as dependências:**
+     ```bash 
+     npm install
+      ```
+ 
+ 3. **Agora é só sodar o projeto :**
+     ```bash 
+    npm run dev
+      ```
+ 
