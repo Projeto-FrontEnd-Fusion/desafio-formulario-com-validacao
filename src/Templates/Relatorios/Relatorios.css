@@ -15,6 +15,10 @@
     border-radius: 10px;
     box-shadow: 1px 1px 1rem rgba(0, 0, 0, 0.356);
     background-color: white;
+    h1{
+     
+      color: #535151;
+  }
 }
 /* ================= MEDIA SCREEN ================= */
 @media screen and (min-width: 769px) and (max-width: 1023px) and (orientation: portrait){
@@ -50,7 +54,10 @@
   border-radius: 10px;
   box-shadow: 15px 1px 1rem rgba(0, 0, 0, 0.185);
   background-color: white;
-  
+  h1{
+     
+    color: #535151;
+}
 }
 }
 @media (max-width: 480px) {
@@ -71,7 +78,10 @@
     border-radius: 10px;
     box-shadow: 15px 1px 1rem rgba(0, 0, 0, 0.185);
     background-color: white;
-    
+    h1{
+     
+      color: #535151;
+  }
 }
 }
 @media (max-width: 320px) {
@@ -92,8 +102,9 @@
         border-radius: 10px;
         box-shadow: 15px 1px 1rem rgba(0, 0, 0, 0.185);
         background-color: white;
-      h1{
-        font-size: 22px;
+        h1{
+          font-size: 22px;
+          color: #535151;
       }
         
     }

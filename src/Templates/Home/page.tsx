@@ -18,7 +18,7 @@ function Home() {
 
   return (
     <>
-      <section className="container_home" >
+      <section className="container_home" data-aos="fade-left" data-aos-duration="2000" >
         {/* title_dashboard */}
         <main className="container_dashboard">
           <div className="title_dashboard">

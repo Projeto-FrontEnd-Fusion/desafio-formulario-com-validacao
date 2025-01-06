@@ -39,37 +39,41 @@ const MemberForm = () => {
   const handleSubmit = (values) => {
     try {
       // Recupera os membros já cadastrados
-      const existingMembers = JSON.parse(localStorage.getItem("members") || "[]");
-  
+      const existingMembers = JSON.parse(
+        localStorage.getItem("members") || "[]"
+      );
+
       // Verifica se já existe um membro com o mesmo e-mail ou telefone
       const duplicateMember = existingMembers.find(
-        (member) => member.email === values.email || member.telefone === values.telefone
+        (member) =>
+          member.email === values.email || member.telefone === values.telefone
       );
-  
+
       if (duplicateMember) {
         // Exibe mensagem de erro caso o membro já exista
         notification.error({
           message: "Erro!",
-          description: "Já existe um membro cadastrado com este e-mail ou telefone.",
+          description:
+            "Já existe um membro cadastrado com este e-mail ou telefone.",
           placement: "topRight",
         });
         return;
       }
-  
+
       // Adiciona o novo membro
       existingMembers.push(values);
       localStorage.setItem("members", JSON.stringify(existingMembers));
-  
+
       // Salva os dados no Redux
       dispatch(addMember(values));
-  
+
       // Exibe mensagem de sucesso
       notification.success({
         message: "Sucesso!",
         description: "Cadastro realizado com sucesso!",
         placement: "topRight",
       });
-  
+
       // Reseta o formulário
       form.resetFields();
     } catch (error) {
@@ -88,11 +92,12 @@ const MemberForm = () => {
 
   return (
     <>
-      <section className="container_form">
+      <section className="container_form" data-aos="fade-left" data-aos-duration="1500">
         <div className="container_perfil">
           <div className="img_perfil">
             <img src="/img/perfil-user.webp" alt="" />
-            <Upload className="up"
+            <Upload
+              className="up"
               name="file"
               onChange={handleFileChange}
               showUploadList={false} // Para ocultar a lista de arquivos

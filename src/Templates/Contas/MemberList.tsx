@@ -23,7 +23,7 @@ const MemberList = () => {
   // Verifica se há membros e exibe uma mensagem caso não tenha
   if (members.length === 0) {
     return (
-      <main className="container_menbers">
+      <main className="container_menbers" data-aos="fade-left" data-aos-duration="1500">
         <h1 className="text-2xl font-bold mb-4">Lista de Membros</h1>
         <p>Nenhum membro encontrado.</p>
       </main>
@@ -31,7 +31,7 @@ const MemberList = () => {
   }
 
   return (
-    <div className="list_menbers">
+    <div className="list_menbers" data-aos="fade-left" data-aos-duration="1500">
       <h1 className="title_menbers">Lista de Membros</h1>
       <ul className="ul_menbers">
         {members.map((member, index) => (
