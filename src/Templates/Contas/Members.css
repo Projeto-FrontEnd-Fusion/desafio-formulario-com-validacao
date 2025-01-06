@@ -587,6 +587,8 @@
     padding: 0.5rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    margin-top: 10vh;
+ 
   }
   /* list_user */
   .list_user {
@@ -600,8 +602,9 @@
     flex-direction: column;
     border-radius: 10px;
     padding: 0.5rem;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.356);
+   
     transition: 0.5 all;
+  
 
     h5 {
       color: #535151;
@@ -736,7 +739,7 @@
     flex-direction: column;
     border-radius: 10px;
     padding: 0.5rem;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.356);
+    /* box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.356); */
     transition: 0.5 all;
 
     h5 {
