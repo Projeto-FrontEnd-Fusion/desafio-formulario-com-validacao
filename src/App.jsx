@@ -1,16 +1,23 @@
+// IMPORT ROUTER
+import { BrowserRouter as Router } from "react-router-dom";
+import AppRouter from "./Router/Router";
 
-import './App.css'
+import NavBar from "./assets/components/Header/page";
+import "./App.css";
+import NavDevice from "./assets/components/NavDevice/page";
+import ColorSwitch from "./assets/components/Switch/ColorSwitch";
 
 function App() {
-
   return (
-    <>
-      <main>
-        <h1>Seja bem vindo! :)</h1>
-        <p>Terceiro Desafio: Formulário de Cadastro de Membros</p>
+    <Router>
+      <main className="container_app">
+        <NavBar />
+        <ColorSwitch/>
+        <NavDevice/>
+        <AppRouter />
       </main>
-    </>
+    </Router>
   );
 }
 
-export default App
+export default App;

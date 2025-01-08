@@ -1,0 +1,702 @@
+/* container_form */
+.container_form {
+  width: 78vw;
+  height: 98vh;
+  position: absolute;
+  right: 0;
+  margin-right: 1vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  box-shadow: 1px 1px 1rem rgba(0, 0, 0, 0.356);
+  padding: 16px;
+  border-radius: 10px;
+  background-color: white;
+
+}
+/* form_user */
+.form_user {
+  width: 65%;
+  padding: 1rem;
+}
+/* title_perfil_form */
+.title_perfil_form {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 1vw;
+}
+.container_perfil {
+  width: 35%;
+  height: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  div:nth-child(1) {
+    background-color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    border-radius: 10px;
+    height: 45%;
+    
+  }
+
+  div {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  img {
+    width: 14vw;
+    mix-blend-mode: color-dodge;
+  }
+  /* text_area_perfil */
+  .text_area_perfil {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    h4 {
+      color: #1a1a1a;
+      font-size: 15px;
+      line-height: 25.56px;
+      font-weight: 600;
+      width: 100%;
+    }
+    textarea {
+      width: 100%;
+      height: 60%;
+      outline: none;
+      padding: 6px;
+      border-radius: 10px;
+    }
+  }
+}
+
+/* ================= MEDIA SCREEN ================= */
+@media (min-width: 768px) and (max-width: 1920px) and (orientation: landscape){
+  /* container_form */
+.container_form {
+  width: 78vw;
+  height: 98vh;
+  position: absolute;
+  right: 0;
+  margin-right: 1vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  box-shadow: 1px 1px 1rem rgba(0, 0, 0, 0.356);
+  padding: 16px;
+  border-radius: 10px;
+  background-color: white;
+}
+/* form_user */
+.form_user {
+  width: 65%;
+  padding: 1rem;
+}
+/* title_perfil_form */
+.title_perfil_form {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 1vw;
+}
+.container_perfil {
+  width: 35%;
+  height: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  div:nth-child(1) {
+    background-color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    border-radius: 10px;
+    height: 45%;
+  }
+
+  div {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  img {
+    width: 14vw;
+    mix-blend-mode: color-dodge;
+  }
+  /* text_area_perfil */
+  .text_area_perfil {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    h4 {
+      color: #1a1a1a;
+      font-size: 15px;
+      line-height: 25.56px;
+      font-weight: 600;
+      width: 100%;
+    }
+    textarea {
+      width: 100%;
+      height: 60%;
+      outline: none;
+      padding: 6px;
+      border-radius: 10px;
+    }
+  }
+}
+
+.form_user button {
+  font-size: 16px; /* Tamanho da fonte do botão */
+  padding: 25px; /* Espaçamento interno */
+}
+
+
+
+
+
+
+
+
+}
+@media screen and (min-width: 769px) and (max-width: 1023px) and (orientation: portrait) {
+   /* container_form */
+   .container_form {
+    width: 98%;
+    height:180vh;
+    margin-right: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 1rem;
+    padding: 16px;
+    border-radius: 10px;
+    background-color: white;
+    margin-top: 80vh;
+  }
+  /* form_user */
+  .form_user {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 15vh;
+  }
+  .form_user input,
+  .form_user select,
+  .form_user textarea {
+    font-size: 22px;
+    padding: 12px;
+  }
+  .form_user button {
+    font-size: 22px; /* Tamanho da fonte do botão */
+    padding: 30px; /* Espaçamento interno */
+  }
+  .form_user .ant-form-item-label > label {
+    font-size: 22px; /* Tamanho da fonte dos labels */
+  }
+  .form_user .ant-select-selector {
+    font-size: 18px;
+    padding: 16px; 
+  }
+  
+  /* Ajusta a fonte dos itens no menu dropdown */
+  .form_user .ant-select-item {
+    font-size: 19px;
+  }
+  
+ 
+  .form_user .ant-select-item-option {
+    padding: 8px 16px;
+  }
+  /* title_perfil_form */
+  .title_perfil_form {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 2vh;
+    margin-left: 4vw;
+    width: 95%;
+    color: #1a1a1a;
+    font-size: 42px;
+    line-height: 25.56px;
+    font-weight: 700;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    
+  }
+  .container_perfil {
+    width: 100%;
+    height: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    div:nth-child(1) {
+      background-color: #ddd;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      flex-direction: column;
+      border-radius: 10px;
+      height: 35%;
+      
+    }
+
+    div {
+      margin-top: 15vh;
+      height: 60%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+ 
+    }
+
+    img {
+      width: 35vw;
+      mix-blend-mode: color-dodge;
+      position: absolute;
+    }
+    .img_perfil{
+     
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    /* text_area_perfil */
+    .text_area_perfil {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      height: 30vh;
+
+      h4 {
+        color: #1a1a1a;
+        font-size: 25px;
+        line-height: 25.56px;
+        font-weight: 600;
+        width: 100%;
+      }
+      textarea {
+        width: 100%;
+        height: 60%;
+        outline: none;
+        padding: 6px;
+        border-radius: 10px;
+        font-size: 22px;
+      }
+    }
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) and (orientation: portrait){
+   /* container_form */
+   .container_form {
+    width: 100%;
+    height: 200vh;
+    margin-right: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 1rem;
+    padding: 16px;
+    border-radius: 10px;
+    background-color: white;
+    margin-top: 100vh;
+  }
+  /* form_user */
+  .form_user {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 15vh;
+  }
+  .form_user input,
+  .form_user select,
+  .form_user textarea {
+    font-size: 22px;
+    padding: 12px;
+  }
+  .form_user button {
+    font-size: 22px; /* Tamanho da fonte do botão */
+    padding: 30px; /* Espaçamento interno */
+  }
+  .form_user .ant-form-item-label > label {
+    font-size: 22px; /* Tamanho da fonte dos labels */
+  }
+  .form_user .ant-select-selector {
+    font-size: 18px;
+    padding: 16px; 
+  }
+  
+  /* Ajusta a fonte dos itens no menu dropdown */
+  .form_user .ant-select-item {
+    font-size: 19px;
+  }
+  
+ 
+  .form_user .ant-select-item-option {
+    padding: 8px 16px;
+  }
+  /* title_perfil_form */
+  .title_perfil_form {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 2vh;
+    margin-left: 4vw;
+    width: 95%;
+    color: #1a1a1a;
+    font-size: 42px;
+    line-height: 25.56px;
+    font-weight: 700;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    
+  }
+  .container_perfil {
+    width: 100%;
+    height: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    div:nth-child(1) {
+      background-color: #ddd;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      flex-direction: column;
+      border-radius: 10px;
+      height: 35%;
+    }
+
+    div {
+      margin-top: 15vh;
+      height: 60%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    img {
+      width: 35vw;
+      mix-blend-mode: color-dodge;
+      position: absolute;
+    }
+    .img_perfil{
+     
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    /* text_area_perfil */
+    .text_area_perfil {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      height: 25vh;
+
+      h4 {
+        color: #1a1a1a;
+        font-size: 25px;
+        line-height: 25.56px;
+        font-weight: 600;
+        width: 100%;
+      }
+      textarea {
+        width: 100%;
+        height: 60%;
+        outline: none;
+        padding: 6px;
+        border-radius: 10px;
+        font-size: 22px;
+      }
+    }
+  }
+}
+@media (max-width: 480px) {
+  /* container_form */
+  .container_form {
+    width: 100%;
+    height: 200vh;
+    margin-right: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 1rem;
+    padding: 16px;
+    border-radius: 10px;
+    background-color: white;
+    margin-top: 200vh;
+  }
+  /* form_user */
+  .form_user {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 15vh;
+  }
+  .form_user input,
+  .form_user select,
+  .form_user textarea {
+    font-size: 18px;
+    padding: 12px;
+  }
+  .form_user button {
+    font-size: 18px; /* Tamanho da fonte do botão */
+    padding: 25px; /* Espaçamento interno */
+  }
+  .form_user .ant-form-item-label > label {
+    font-size: 18px; /* Tamanho da fonte dos labels */
+  }
+  .form_user .ant-select-selector {
+    font-size: 18px;
+    padding: 16px; 
+  }
+  
+  /* Ajusta a fonte dos itens no menu dropdown */
+  .form_user .ant-select-item {
+    font-size: 19px;
+  }
+  
+ 
+  .form_user .ant-select-item-option {
+    padding: 8px 16px;
+  }
+  /* title_perfil_form */
+  .title_perfil_form {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 8vh;
+    margin-left: 3vw;
+    width: 95%;
+    color: #1a1a1a;
+    font-size: 32px;
+    line-height: 25.56px;
+    font-weight: 700;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  .container_perfil {
+    width: 100%;
+    height: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    div:nth-child(1) {
+      background-color: #ddd;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      flex-direction: column;
+      border-radius: 10px;
+      height: 35%;
+    }
+
+    div {
+      margin-top: 15vh;
+      height: 60%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    img {
+      width: 50vw;
+      mix-blend-mode: color-dodge;
+      position: absolute;
+    }
+    .img_perfil{
+     
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    /* text_area_perfil */
+    .text_area_perfil {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      height: 25vh;
+
+      h4 {
+        color: #1a1a1a;
+        font-size: 25px;
+        line-height: 25.56px;
+        font-weight: 600;
+        width: 100%;
+      }
+      textarea {
+        width: 100%;
+        height: 60%;
+        outline: none;
+        padding: 6px;
+        border-radius: 10px;
+      }
+    }
+  }
+}
+@media (max-width: 320px) {
+  /* container_form */
+  .container_form {
+    width: 100%;
+    height: 240vh;
+    margin-right: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 1rem;
+    padding: 16px;
+    border-radius: 10px;
+    background-color: white;
+    margin-top: 230vh;
+  }
+  /* form_user */
+  .form_user {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 15vh;
+
+  }
+  .form_user input,
+  .form_user select,
+  .form_user textarea {
+    font-size: 14px;
+    padding: 8px;
+  }
+  .form_user button {
+    font-size: 18px; /* Tamanho da fonte do botão */
+    padding: 25px; /* Espaçamento interno */
+  }
+  .form_user .ant-form-item-label > label {
+    font-size: 14px; /* Tamanho da fonte dos labels */
+  }
+  .form_user .ant-select-selector {
+    font-size: 18px;
+    padding: 16px; 
+  }
+  
+  /* Ajusta a fonte dos itens no menu dropdown */
+  .form_user .ant-select-item {
+    font-size: 14px;
+  }
+  
+ 
+  .form_user .ant-select-item-option {
+    padding: 8px 16px;
+  }
+  /* title_perfil_form */
+  .title_perfil_form {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 8vh;
+    margin-left: 3vw;
+    width: 95%;
+    color: #1a1a1a;
+    font-size: 22px;
+    line-height: 25.56px;
+    font-weight: 700;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    
+  }
+  .container_perfil {
+    width: 100%;
+    height: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    div:nth-child(1) {
+      background-color: #ddd;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      flex-direction: column;
+      border-radius: 10px;
+      height: 35%;
+    }
+
+    div {
+      margin-top: 15vh;
+      height: 60%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    img {
+      width: 50vw;
+      mix-blend-mode: color-dodge;
+      position: absolute;
+    }
+    .img_perfil{
+     
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    /* text_area_perfil */
+    .text_area_perfil {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      height: 25vh;
+
+      h4 {
+        color: #1a1a1a;
+        font-size: 20px;
+        line-height: 25.56px;
+        font-weight: 600;
+        width: 100%;
+      }
+      textarea {
+        width: 100%;
+        height: 60%;
+        outline: none;
+        padding: 6px;
+        border-radius: 10px;
+      }
+    }
+  }
+}

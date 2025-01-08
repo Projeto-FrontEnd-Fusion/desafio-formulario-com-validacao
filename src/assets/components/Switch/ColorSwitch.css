@@ -1,0 +1,183 @@
+.container_switch {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  top: 0;
+  margin-top: 2vh;
+  right: 0;
+  margin-right: 2vw;
+  z-index: 30;
+
+  .switch {
+    outline: none;
+    
+  }
+  
+}
+
+/* Estilo para modo escuro */
+body.dark-mode {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+body.dark-mode section {
+  background-color: #444444;
+  color: #ffffff;
+}
+
+/* Outros elementos, caso necessário */
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode span,
+body.dark-mode,
+body.dark-mode p {
+  color: #ffffff;
+}
+
+body.dark-mode .card_list {
+  background-color: #444444;
+}
+body.dark-mode .itemsDashboard_list {
+  h3 {
+    color: #444444;
+  }
+  p {
+    color: #333333;
+  }
+}
+
+/* form  */
+body.dark-mode .form_user {
+  label {
+    color: white;
+  }
+}
+/* container_form */
+body.dark-mode .container_form {
+  h4 {
+    color: white;
+  }
+}
+body.dark-mode .up{
+ button{
+  background-color: #333333;
+ }
+}
+/* list_menbers */
+body.dark-mode .list_menbers{
+background-color: #333333;
+box-shadow: 1px 1px 1rem rgba(0, 0, 0, 0.356);
+border-radius: 10px;
+p{
+  color: #333333;
+}
+}
+/* text_area_perfil */
+body.dark-mode  .text_area_perfil{
+  textarea{
+    color: #333333;
+  }
+}
+
+/* header_device  */
+body.dark-mode .header_device {
+background-color: black;
+}
+/* title_perfil_form */
+body.dark-mode .title_perfil_form{
+  color: white;
+  background-color: #444444;
+}
+/* container_menbers */
+body.dark-mode .container_menbers{
+h1{
+  color: #333333;
+}
+p{
+  color: #333333;
+}
+}
+/* services_container */
+body.dark-mode .services_container{
+  h1{
+    color: white;
+  }
+}
+/* ================= MEDIA SCREEN ================= */
+@media screen and (min-width: 769px) and (max-width: 1023px) and (orientation: portrait){
+  .container_switch {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    top: 0;
+    margin-top: 3vh;
+    right: 0;
+    margin-right: 4vw;
+    z-index: 30;
+  
+    .switch {
+      outline: none;
+      width: 12vw; 
+      font-size: 24px; 
+      .ant-switch-inner {
+        font-size: 18px; 
+      }
+    }
+    
+  }
+  .anticon {
+    font-size: 18px; 
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) and (orientation: portrait){
+  .container_switch {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    top: 0;
+    margin-top: 3vh;
+    right: 0;
+    margin-right: 4vw;
+    z-index: 30;
+  
+    .switch {
+      outline: none;
+      width: 12vw; 
+      font-size: 24px; 
+      .ant-switch-inner {
+        font-size: 18px; 
+      }
+    }
+    
+  }
+  .anticon {
+    font-size: 18px; 
+  }
+}
+@media (max-width: 480px){
+  .container_switch {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    top: 0;
+    margin-top: 2vh;
+    right: 0;
+    margin-right: 5vw;
+    z-index: 30;
+  
+    .switch {
+      outline: none;
+      
+    }
+    
+  }
+  
+ 
+}
